@@ -15,12 +15,19 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            timer1.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string str = maskedTextBox1.Text;
-            label1.Text = str;
+            label2.Text = str;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            label1.Text = dt.ToString();
         }
     }
 }
