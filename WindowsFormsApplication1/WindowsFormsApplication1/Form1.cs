@@ -23,6 +23,8 @@ namespace WindowsFormsApplication1
         {
             string str = maskedTextBox1.Text;
             label2.Text = str;
+            Form2 frm = new Form2();
+            frm.Show();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
