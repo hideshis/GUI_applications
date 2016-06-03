@@ -29,5 +29,18 @@ namespace WindowsFormsApplication1
             DateTime dt = DateTime.Now;
             label1.Text = dt.ToString();
         }
+
+        private void fight_Click(object sender, EventArgs e)
+        {
+            if (gu.Checked.Equals(true)) {
+                label3.Text = "グー";
+            } else if (choki.Checked.Equals(true))
+            {
+                label3.Text = "チョキ";
+            } else
+            {
+                label3.Text = "パー";
+            }
+        }
     }
 }

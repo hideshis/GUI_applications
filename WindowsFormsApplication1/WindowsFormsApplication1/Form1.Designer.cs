@@ -29,11 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gu = new System.Windows.Forms.RadioButton();
+            this.choki = new System.Windows.Forms.RadioButton();
+            this.pa = new System.Windows.Forms.RadioButton();
+            this.fight = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -74,17 +83,96 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "label2";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(576, 190);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 147);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // gu
+            // 
+            this.gu.AutoSize = true;
+            this.gu.Checked = true;
+            this.gu.Location = new System.Drawing.Point(288, 60);
+            this.gu.Name = "gu";
+            this.gu.Size = new System.Drawing.Size(42, 16);
+            this.gu.TabIndex = 5;
+            this.gu.TabStop = true;
+            this.gu.Text = "グー";
+            this.gu.UseVisualStyleBackColor = true;
+            // 
+            // choki
+            // 
+            this.choki.AutoSize = true;
+            this.choki.Location = new System.Drawing.Point(288, 82);
+            this.choki.Name = "choki";
+            this.choki.Size = new System.Drawing.Size(48, 16);
+            this.choki.TabIndex = 6;
+            this.choki.TabStop = true;
+            this.choki.Text = "チョキ";
+            this.choki.UseVisualStyleBackColor = true;
+            // 
+            // pa
+            // 
+            this.pa.AutoSize = true;
+            this.pa.Location = new System.Drawing.Point(288, 104);
+            this.pa.Name = "pa";
+            this.pa.Size = new System.Drawing.Size(43, 16);
+            this.pa.TabIndex = 7;
+            this.pa.TabStop = true;
+            this.pa.Text = "パー";
+            this.pa.UseVisualStyleBackColor = true;
+            // 
+            // fight
+            // 
+            this.fight.Location = new System.Drawing.Point(288, 126);
+            this.fight.Name = "fight";
+            this.fight.Size = new System.Drawing.Size(75, 23);
+            this.fight.TabIndex = 8;
+            this.fight.Text = "fight!!";
+            this.fight.UseVisualStyleBackColor = true;
+            this.fight.Click += new System.EventHandler(this.fight_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(418, 92);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 12);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "label3";
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(802, 12);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(568, 518);
+            this.webBrowser1.TabIndex = 10;
+            this.webBrowser1.Url = new System.Uri("https://github.com/hideshis", System.UriKind.Absolute);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(1382, 576);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.fight);
+            this.Controls.Add(this.pa);
+            this.Controls.Add(this.choki);
+            this.Controls.Add(this.gu);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,6 +185,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RadioButton gu;
+        private System.Windows.Forms.RadioButton choki;
+        private System.Windows.Forms.RadioButton pa;
+        private System.Windows.Forms.Button fight;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
 
