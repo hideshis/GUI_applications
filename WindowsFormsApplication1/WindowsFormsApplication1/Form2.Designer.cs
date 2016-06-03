@@ -34,8 +34,11 @@
             this.back = new System.Windows.Forms.Button();
             this.panel_next = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel_back.SuspendLayout();
             this.panel_next.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +58,6 @@
             this.panel_back.Name = "panel_back";
             this.panel_back.Size = new System.Drawing.Size(1381, 439);
             this.panel_back.TabIndex = 1;
-            this.panel_back.Visible = false;
             // 
             // next
             // 
@@ -85,7 +87,6 @@
             this.panel_next.Name = "panel_next";
             this.panel_next.Size = new System.Drawing.Size(1378, 439);
             this.panel_next.TabIndex = 5;
-            this.panel_next.Visible = false;
             // 
             // label2
             // 
@@ -96,21 +97,42 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "label2";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1381, 439);
+            this.panel1.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(765, 201);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 12);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "default";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1380, 637);
-            this.Controls.Add(this.panel_next);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.back);
             this.Controls.Add(this.next);
             this.Controls.Add(this.panel_back);
+            this.Controls.Add(this.panel_next);
             this.Name = "Form2";
             this.Text = "Form2";
             this.panel_back.ResumeLayout(false);
             this.panel_back.PerformLayout();
             this.panel_next.ResumeLayout(false);
             this.panel_next.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -123,5 +145,7 @@
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.Panel panel_next;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
     }
 }

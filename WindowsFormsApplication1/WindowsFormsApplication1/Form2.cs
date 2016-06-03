@@ -19,14 +19,12 @@ namespace WindowsFormsApplication1
 
         private void next_Click(object sender, EventArgs e)
         {
-            panel_next.Visible = true;
-            panel_back.Visible = false;
+            panel_next.BringToFront();
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-            panel_next.Visible = false;
-            panel_back.Visible = true;
+            panel_back.BringToFront();
         }
     }
 }
