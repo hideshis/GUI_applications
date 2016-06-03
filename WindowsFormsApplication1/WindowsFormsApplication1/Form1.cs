@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace WindowsFormsApplication1
 {
@@ -32,12 +33,15 @@ namespace WindowsFormsApplication1
 
         private void fight_Click(object sender, EventArgs e)
         {
-            if (gu.Checked.Equals(true)) {
+            if (gu.Checked.Equals(true))
+            {
                 label3.Text = "グー";
-            } else if (choki.Checked.Equals(true))
+            }
+            else if (choki.Checked.Equals(true))
             {
                 label3.Text = "チョキ";
-            } else
+            }
+            else
             {
                 label3.Text = "パー";
             }

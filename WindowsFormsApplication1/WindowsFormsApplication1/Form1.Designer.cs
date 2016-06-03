@@ -42,6 +42,8 @@
             this.fight = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,11 +156,26 @@
             this.webBrowser1.TabIndex = 10;
             this.webBrowser1.Url = new System.Uri("https://github.com/hideshis", System.UriKind.Absolute);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 19);
+            this.dateTimePicker1.TabIndex = 11;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(156, 212);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 576);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.fight);
@@ -192,6 +209,8 @@
         private System.Windows.Forms.Button fight;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
 
