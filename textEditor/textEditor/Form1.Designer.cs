@@ -48,6 +48,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem});
@@ -139,7 +140,9 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.InfoText;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.textBox1.Location = new System.Drawing.Point(0, 26);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
