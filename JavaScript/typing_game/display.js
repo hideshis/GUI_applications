@@ -11,3 +11,10 @@ function initilaDisplay() {
 };
 
 initilaDisplay();
+
+document.onkeypress = function (e) {
+    var element = document.createElement('p');
+    element.innerText = e.key;
+    var objBody = document.getElementsByTagName("body").item(0);
+    objBody.appendChild(element);
+};
