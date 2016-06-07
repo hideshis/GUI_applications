@@ -41,12 +41,6 @@ function Display (target, scoreLabel, missLabel) {
     var missLabel = document.getElementById('miss').textContent = missLabel;
 };
 
-var target = new Target();
-var scoreLabel = new Score();
-var missLabel = new Score();
-
-Display(target.target, scoreLabel.score, missLabel.score);
-
 document.onkeypress = function (e) {
     if (e.key == target.checkingTargetChar) {
         target.updateTargetAndLocation();
@@ -55,9 +49,11 @@ document.onkeypress = function (e) {
     } else {
         missLabel.updateScore();
         Display(target.target, scoreLabel.score, missLabel.score);
-        var element = document.createElement('p');
-        element.textContent = target.target;
-        var objBody = document.getElementsByTagName("body").item(0);
-        objBody.appendChild(element);
     }
 };
+
+var target = new Target();
+var scoreLabel = new Score();
+var missLabel = new Score();
+
+Display(target.target, scoreLabel.score, missLabel.score);
