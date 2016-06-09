@@ -47,10 +47,17 @@ String.prototype.replaceAt=function(index, character) {
 function Display (target, scoreLabel, missLabel, typingSpeed) {
     'use strict';
 
+    /*
     var target = document.getElementById('target').textContent = target;
     var scoreLabel = document.getElementById('score').textContent = scoreLabel;
     var missLabel = document.getElementById('miss').textContent = missLabel;
     var typingSpeed = document.getElementById('speed').textContent = typingSpeed;
+    */
+    document.getElementById('target').textContent = target;
+    document.getElementById('score').textContent = scoreLabel;
+    document.getElementById('miss').textContent = missLabel;
+    document.getElementById('speed').textContent = typingSpeed;
+
 };
 
 document.onkeypress = function (e) {
