@@ -96,6 +96,8 @@
     <None Include="Resources\opening.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\configuration.png" />
+    <None Include="Resources\exit.png" />
     <Content Include="Resources\explosion.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
